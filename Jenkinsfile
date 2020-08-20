@@ -5,6 +5,7 @@ pipeline {
             steps {
                 cd my-app
                 mvn compile
+                java -cp target/classes com.mycompany.app.App
             }
         }
     }
