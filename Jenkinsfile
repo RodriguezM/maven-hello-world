@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hello World'
+                cd my-app
+                mvn compile
             }
         }
     }
