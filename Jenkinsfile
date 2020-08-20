@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                cd my-app
-                mvn compile
-                java -cp target/classes com.mycompany.app.App
+                java -version
             }
         }
     }
