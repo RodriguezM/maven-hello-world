@@ -3,9 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'cd my-app'
-                bat 'mvn compile'
-                bat 'java -cp target/classes com.mycompany.app.App'
+                dir('my-app' {
+                    bat 'mvn compile'
+                    bat 'java -cp target/classes com.mycompany.app.App'
+                }
             }
         }
     }
