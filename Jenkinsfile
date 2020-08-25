@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'wmic computersystem get name'
+                bat 'cd my-app'
+                bat 'dir'
             }
         }
     }
