@@ -5,6 +5,8 @@ pipeline {
             steps {
                 bat 'cd my-app'
                 bat 'dir'
+                bat 'cd my-app'
+                bat 'dir'
             }
         }
     }
