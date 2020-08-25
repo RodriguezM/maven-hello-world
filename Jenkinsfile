@@ -4,9 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 bat 'cd my-app'
-                bat 'dir'
-                bat 'cd my-app'
-                bat 'dir'
+                bat 'mvn clean install'
+                bat ''
             }
         }
     }
