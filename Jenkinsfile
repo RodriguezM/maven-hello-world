@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hello'
+                sh 'cd my-app'
+                sh 'dir'
             }
         }
     }
